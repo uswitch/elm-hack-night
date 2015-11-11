@@ -97,10 +97,11 @@ view address model =
 inputForm address model =
   input
     [ type' "text"
-    , placeholder "Search for an album..."
+    , placeholder "Search for an album with your voice..."
     , value model.query
     , onChange address QueryChange
     , onEnter address Query
+    , style [("font-size", "36pt"), ("height", "150px"), ("width", "1000px")]
     ]
     []
 
